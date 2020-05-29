@@ -1,0 +1,8 @@
+(define (prime? x)
+	(define (iter i) 
+		(if (<= ((lambda (x) (* x x)) i) x) 
+			(if (= (remainder x i) 0) 
+				(= 1 0) 
+				(iter (+ i 1))) 
+			(= 1 1))) 
+	(and (iter 2) (not (= x 1))))

@@ -1,0 +1,10 @@
+(define (mul a b) 
+	(define (mul-iter a b t) 
+		(cond ((= b 0) t) 
+			((= (remainder b 2) 0) (mul-iter (+ a a) (/ b 2) t)) 
+			(else (mul-iter a (- b 1) (+ a t))))) 
+	(mul-iter a b 0))
+	
+(mul 3 7)
+(mul 8 5)
+(mul 5 9)
