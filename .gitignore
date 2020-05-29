@@ -1,7 +1,6 @@
 temp.scm
 *temp*
 settings.json
-src/gitadd.bat
 gitadd.bat
-src/push.bat
+*push.bat*
 push.bat
